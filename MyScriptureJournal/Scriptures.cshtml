@@ -22,6 +22,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>My Scripture Journal</title>
     <style type="text/css">
         .grid {
@@ -48,7 +49,7 @@
     </style>
 </head>
 <body>
-    <h1>My Scirpture Journal</h1>
+    <h1 style="font-family: 'Roboto', serif;">My Scirpture Journal</h1>
     <form method="get">
         <div>
             <label for="searchBook">Book to look for:</label>
@@ -71,14 +72,14 @@
             alternatingRowStyle: "alt",
             columns: grid.Columns(
                 grid.Column(format: @<a href="~/EditScripture?id=@item.ID">Edit</a>),
-                         grid.Column("Date"),
-                         grid.Column("Book"),
-                         grid.Column("Chapter"),
-                         grid.Column("Verse"),
-                         grid.Column("Notes"),
-                         grid.Column(format: @<a href="~/DeleteScripture?id=@item.ID">Delete</a>)
-                         )
-                     )
+                                  grid.Column("Date"),
+                                  grid.Column("Book"),
+                                  grid.Column("Chapter"),
+                                  grid.Column("Verse"),
+                                  grid.Column("Notes"),
+                                  grid.Column(format: @<a href="~/DeleteScripture?id=@item.ID">Delete</a>)
+                                     )
+                                 )
     </div>
     <p>
         <a href="~/AddScripture">Add a Scripture</a>

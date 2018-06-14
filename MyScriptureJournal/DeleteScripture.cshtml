@@ -43,9 +43,10 @@
 <html>
 <head>
     <title>Delete a Scripture</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <h1>Delete a Scripture</h1>
+    <h1 style="font-family: 'Roboto', serif;">Delete a Scripture</h1>
     @Html.ValidationSummary()
     <p><a href="~/Scriptures">Return to list of Scriptures</a></p>
 
@@ -73,7 +74,7 @@
                 <span>@notes</span>
             </p>
 
-            <input type="hidden" name="movieid" value="@scriptureId" />
+            <input type="hidden" name="scripturId" value="@scriptureId" />
             <p><input type="submit" name="buttonDelete" value="Delete Scripture" /></p>
         </fieldset>
         <p><a href="~/Scriptures">Return to list of Scriptures</a></p>
